@@ -1,0 +1,57 @@
+{
+  "name": "@eclipse-che/theia-containers-plugin",
+  "publisher": "Eclipse Che",
+  "keywords": [
+    "theia-plugin"
+  ],
+  "version": "0.0.2",
+  "license": "EPL-2.0",
+  "files": [
+    "src",
+    "resources"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "right": [
+        {
+          "id": "my-workspace",
+          "title": "My Workspace",
+          "icon": "resources/cube.svg"
+        }
+      ]
+    },
+    "views": {
+      "my-workspace": [
+        {
+          "id": "workspace",
+          "name": "Workspace"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@theia/plugin": "next",
+    "@theia/plugin-packager": "latest",
+    "@eclipse-che/plugin": "0.0.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "prepare": "yarn clean && yarn build",
+    "clean": "rimraf lib",
+    "format": "tsfmt -r --useTsfmt ../../configs/tsfmt.json",
+    "lint": "eslint --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "compile": "tsc",
+    "build": "concurrently -n \"format,lint,compile\" -c \"red,green,blue\" \"yarn format\" \"yarn lint\" \"yarn compile\" && theia-plugin pack",
+    "watch": "tsc -w"
+  },
+  "engines": {
+    "theiaPlugin": "next"
+  },
+  "theiaPlugin": {
+    "backend": "lib/containers-plugin.js"
+  }
+}

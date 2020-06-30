@@ -1,0 +1,54 @@
+{
+  "name": "@eclipse-che/welcome-plugin",
+  "version": "0.0.1",
+  "publisher": "Eclipse Che",
+  "keywords": [
+    "theia-plugin"
+  ],
+  "description": "Welcome Page Plugin",
+  "license": "EPL-2.0",
+  "files": [
+    "src",
+    "resources"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Welcome plugin configuration",
+      "properties": {
+        "che.welcome.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable welcome plugin."
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.6.3"
+  },
+  "devDependencies": {
+    "@theia/plugin": "next",
+    "@theia/plugin-packager": "latest",
+    "@eclipse-che/plugin": "0.0.1"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "format": "tsfmt -r --useTsfmt ../../configs/tsfmt.json",
+    "lint": "eslint --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint --fix --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "compile": "tsc",
+    "build": "yarn lint:fix && concurrently -n \"format,lint,compile\" -c \"red,green,blue\" \"yarn format\" \"yarn lint\" \"yarn compile\" && theia-plugin pack",
+    "watch": "tsc -w"
+  },
+  "engines": {
+    "theiaPlugin": "next"
+  },
+  "theiaPlugin": {
+    "backend": "lib/welcome-plugin.js"
+  }
+}

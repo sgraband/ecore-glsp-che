@@ -1,0 +1,49 @@
+{
+  "name": "@eclipse-che/theia-terminal",
+  "keywords": [
+    "theia-extension",
+    "terminal"
+  ],
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
+  "contributors": [
+    {
+      "name": "Oleksandr Andriienko",
+      "email": "oandriie@redhat.com"
+    }
+  ],
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@theia/core": "next",
+    "@theia/terminal": "next",
+    "reconnecting-websocket": "^4.2.0",
+    "@eclipse-che/workspace-client": "latest",
+    "@eclipse-che/api": "latest",
+    "vscode-ws-jsonrpc": "0.2.0"
+  },
+  "license": "EPL-2.0",
+  "devDependencies": {
+    "typescript-formatter": "7.2.2"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "format": "tsfmt -r --useTsfmt ../../configs/tsfmt.json",
+    "lint": "eslint --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "compile": "tsc",
+    "build": "concurrently -n \"format,lint,compile\" -c \"red,green,blue\" \"yarn format\" \"yarn lint\" \"yarn compile\"",
+    "watch": "tsc -w",
+    "publish:next": "yarn publish  --registry=https://registry.npmjs.org/ --no-git-tag-version --new-version 0.0.1-\"$(date +%s)\""
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/terminal-frontend-module",
+      "backend": "lib/node/terminal-backend-module"
+    }
+  ]
+}

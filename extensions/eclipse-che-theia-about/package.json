@@ -1,0 +1,38 @@
+{
+  "name": "@eclipse-che/theia-about",
+  "keywords": [
+    "theia-extension"
+  ],
+  "version": "0.0.1",
+  "description": "Eclipse Che - Theia About menu",
+  "dependencies": {
+    "@theia/core": "next",
+    "@theia/mini-browser": "next",
+    "@eclipse-che/theia-plugin-ext": "^0.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/about-frontend-module"
+    }
+  ],
+  "license": "EPL-2.0",
+  "files": [
+    "lib",
+    "src",
+    "scripts",
+    "conf"
+  ],
+  "scripts": {
+    "setup-build-details": "node ./scripts/generate-about-details.js",
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "format": "tsfmt -r --useTsfmt ../../configs/tsfmt.json",
+    "lint": "eslint --cache=true --no-error-on-unmatched-pattern=true \"{src,test}/**/*.{ts,tsx}\"",
+    "compile": "yarn run setup-build-details && tsc",
+    "build": "concurrently -n \"format,lint,compile\" -c \"red,green,blue\" \"yarn format\" \"yarn lint\" \"yarn compile\"",
+    "watch": "tsc -w"
+  }
+}
