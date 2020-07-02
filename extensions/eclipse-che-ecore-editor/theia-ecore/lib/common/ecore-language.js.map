@@ -1,0 +1,1 @@
+{"version":3,"file":"ecore-language.js","sourceRoot":"","sources":["../../src/common/ecore-language.ts"],"names":[],"mappings":";;AAAA;;;;;;;;;kFASkF;AAClF,IAAiB,aAAa,CAM7B;AAND,WAAiB,aAAa;IACb,gBAAE,GAAW,OAAO,CAAC;IACrB,kBAAI,GAAW,OAAO,CAAC;IACvB,mBAAK,GAAW,eAAe,CAAC;IAChC,yBAAW,GAAW,cAAc,CAAC;IACrC,2BAAa,GAAW,QAAQ,CAAC;AAClD,CAAC,EANgB,aAAa,GAAb,qBAAa,KAAb,qBAAa,QAM7B"}

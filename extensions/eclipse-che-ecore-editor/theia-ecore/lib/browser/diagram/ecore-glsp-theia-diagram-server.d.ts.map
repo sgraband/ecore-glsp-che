@@ -1,0 +1,1 @@
+{"version":3,"file":"ecore-glsp-theia-diagram-server.d.ts","sourceRoot":"","sources":["../../../src/browser/diagram/ecore-glsp-theia-diagram-server.ts"],"names":[],"mappings":"AAAA;;;;;;;;;kFASkF;AAClF,OAAO,EAAE,qBAAqB,EAAE,MAAM,0BAA0B,CAAC;AACjE,OAAO,EAAE,sBAAsB,EAAE,MAAM,6CAA6C,CAAC;AAIrF,qBACa,2BAA4B,SAAQ,sBAAsB;IACnE,UAAU,CAAC,QAAQ,EAAE,qBAAqB,GAAG,IAAI;CAOpD"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"backend-extension.d.ts","sourceRoot":"","sources":["../../src/node/backend-extension.ts"],"names":[],"mappings":"AAaA,OAAO,EAAE,eAAe,EAAc,MAAM,WAAW,CAAC;AAKxD,OAAO,EAAC,iBAAiB,EAA4C,MAAM,wBAAwB,CAAC;AAIpG,qBACa,sBAAuB,YAAW,iBAAiB;IAC5D,SAAS,UAAS;IAClB,QAAQ,SAAe;IACvB,OAAO,SAA4G;IACnH,UAAU,SAAQ;CACrB;;AAED,wBAUG"}

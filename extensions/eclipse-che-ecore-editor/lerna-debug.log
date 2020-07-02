@@ -1,0 +1,343 @@
+0 silly input [ 'prepare' ]
+1 silly flags { _: [ 'run' ], script: 'prepare', args: [] }
+2 verbose rootPath /home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client
+3 info version 2.4.0
+4 silly existsSync /home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInPackageStreaming [ 'prepare', [], 'sprotty-ecore' ]
+9 silly getExecOpts { cwd:
+9 silly getExecOpts    '/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/sprotty-ecore' }
+10 silly runScriptInPackageStreaming [ 'prepare', [], 'theia-ecore' ]
+11 silly getExecOpts { cwd:
+11 silly getExecOpts    '/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/theia-ecore' }
+12 error execute callback with error
+13 error Error: Command failed: npm run prepare
+13 error error Command failed with exit code 2.
+13 error npm ERR! code ELIFECYCLE
+13 error npm ERR! errno 2
+13 error npm ERR! theia-ecore@0.2.0 prepare: `yarn run clean && yarn run build && lerna run prepare`
+13 error npm ERR! Exit status 2
+13 error npm ERR!
+13 error npm ERR! Failed at the theia-ecore@0.2.0 prepare script.
+13 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+13 error
+13 error npm ERR! A complete log of this run can be found in:
+13 error npm ERR!     /home/simon/.npm/_logs/2020-06-09T08_05_25_743Z-debug.log
+13 error
+13 error
+13 error > theia-ecore@0.2.0 prepare /home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/theia-ecore
+13 error > yarn run clean && yarn run build && lerna run prepare
+13 error
+13 error yarn run v1.22.4
+13 error $ rimraf lib
+13 error Done in 1.02s.
+13 error yarn run v1.22.4
+13 error $ tsc && yarn run lint
+13 error ../node_modules/@theia/core/lib/common/keyboard/keyboard-layout-provider.d.ts(16,55): error TS2307: Cannot find module 'native-keymap' or its corresponding type declarations.
+13 error ../node_modules/@theia/core/src/typings/nsfw/index.d.ts(48,5): error TS2309: An export assignment cannot be used in a module with other exported elements.
+13 error ../node_modules/@theia/filesystem/lib/browser/file-upload-service.d.ts(53,49): error TS2304: Cannot find name 'WebKitEntry'.
+13 error ../node_modules/@theia/filesystem/lib/browser/file-upload-service.d.ts(58,58): error TS2304: Cannot find name 'WebKitDirectoryEntry'.
+13 error ../node_modules/@theia/filesystem/lib/browser/file-upload-service.d.ts(59,53): error TS2304: Cannot find name 'WebKitEntry'.
+13 error ../node_modules/@theia/filesystem/lib/browser/file-upload-service.d.ts(60,53): error TS2304: Cannot find name 'WebKitFileEntry'.
+13 error ../node_modules/@theia/messages/lib/browser/notification-content-renderer.d.ts(16,29): error TS7016: Could not find a declaration file for module 'markdown-it'. '/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/node_modules/markdown-it/index.js' implicitly has an 'any' type.
+13 error   Try `npm install @types/markdown-it` if it exists or add a new declaration (.d.ts) file containing `declare module 'markdown-it';`
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-context-key-service.d.ts(18,50): error TS2694: Namespace 'monaco' has no exported member 'contextKeyService'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-context-key-service.d.ts(23,56): error TS2694: Namespace 'monaco' has no exported member 'contextkey'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-context-key-service.d.ts(24,43): error TS2694: Namespace 'monaco' has no exported member 'contextkey'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-editor-model.d.ts(28,47): error TS2694: Namespace 'monaco.editor' has no exported member 'ITextEditorModel'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-editor.d.ts(103,37): error TS2694: Namespace 'monaco' has no exported member 'commands'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-editor.d.ts(104,43): error TS2694: Namespace 'monaco' has no exported member 'instantiation'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(24,63): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(30,55): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(35,31): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(58,39): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(77,39): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(78,54): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(79,73): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(80,136): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(81,43): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(83,52): error TS2339: Property 'quickOpen' does not exist on type 'typeof monaco'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(94,29): error TS2694: Namespace 'monaco' has no exported member 'keybindings'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(95,22): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(97,57): error TS2339: Property 'quickOpen' does not exist on type 'typeof monaco'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(103,29): error TS2694: Namespace 'monaco' has no exported member 'keybindings'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(105,62): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(118,70): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-quick-open-service.d.ts(122,97): error TS2694: Namespace 'monaco' has no exported member 'quickOpen'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-text-model-service.d.ts(22,70): error TS2694: Namespace 'monaco.editor' has no exported member 'ITextModelService'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-text-model-service.d.ts(31,72): error TS2694: Namespace 'monaco.editor' has no exported member 'IReference'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-text-model-service.d.ts(40,78): error TS2694: Namespace 'monaco.editor' has no exported member 'ITextModelContentProvider'.
+13 error ../node_modules/@theia/monaco/lib/browser/monaco-workspace.d.ts(146,120): error TS2694: Namespace 'monaco.editor' has no exported member 'IBulkEditResult'.
+13 error ../node_modules/@types/mocha/index.d.ts(2680,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'beforeEach' must be of type 'Lifecycle', but here has type 'HookFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2698,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'afterEach' must be of type 'Lifecycle', but here has type 'HookFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2714,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'describe' must be of type 'Describe', but here has type 'SuiteFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2735,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'xdescribe' must be of type 'Describe', but here has type 'PendingSuiteFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2749,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'it' must be of type 'It', but here has type 'TestFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2763,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'test' must be of type 'It', but here has type 'TestFunction'.
+13 error ../node_modules/@types/mocha/index.d.ts(2770,13): error TS2403: Subsequent variable declarations must have the same type.  Variable 'xit' must be of type 'It', but here has type 'PendingTestFunction'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(1,23): error TS2688: Cannot find type definition file for 'monaco-editor-core/monaco'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(13,60): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(67,39): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(87,50): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(89,69): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(90,55): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-converter.d.ts(92,74): error TS2694: Namespace 'monaco.languages' has no exported member 'ICodeLensSymbol'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-languages.d.ts(1,23): error TS2688: Cannot find type definition file for 'monaco-editor-core/monaco'.
+13 error ../node_modules/monaco-languageclient/lib/monaco-workspace.d.ts(1,23): error TS2688: Cannot find type definition file for 'monaco-editor-core/monaco'.
+13 error ../node_modules/monaco-languageclient/lib/services.d.ts(171,47): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/monaco-languageclient/lib/services.d.ts(172,58): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/monaco-languageclient/lib/services.d.ts(194,34): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/client.d.ts(1,919): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/codeConverter.d.ts(1,23): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/colorProvider.d.ts(1,172): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/colorProvider.d.ts(4,10): error TS2305: Module '"../../vscode-languageserver-protocol/lib/protocol.colorProvider"' has no exported member 'ColorRegistrationOptions'.
+13 error ../node_modules/vscode-languageclient/lib/colorProvider.d.ts(4,36): error TS2305: Module '"../../vscode-languageserver-protocol/lib/protocol.colorProvider"' has no exported member 'ColorOptions'.
+13 error ../node_modules/vscode-languageclient/lib/declaration.d.ts(1,110): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/foldingRange.d.ts(1,105): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/implementation.d.ts(1,143): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/protocolCompletionItem.d.ts(1,23): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/protocolConverter.d.ts(1,23): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/selectionRange.d.ts(1,116): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/typeDefinition.d.ts(1,143): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error ../node_modules/vscode-languageclient/lib/workspaceFolders.d.ts(1,77): error TS2307: Cannot find module 'vscode' or its corresponding type declarations.
+13 error extensions/che-theia-hosted-plugin-manager-extension/src/node/che-workspace-hosted-plugin-uri-post-processor.ts(13,46): error TS2307: Cannot find module '@theia/plugin-dev' or its corresponding type declarations.
+13 error extensions/che-theia-hosted-plugin-manager-extension/src/node/che-workspace-hosted-plugin-uri-post-processor.ts(14,61): error TS2307: Cannot find module '@eclipse-che/workspace-client' or its corresponding type declarations.
+13 error extensions/che-theia-hosted-plugin-manager-extension/src/node/che-workspace-hosted-plugin-uri-post-processor.ts(15,21): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/che-theia-hosted-plugin-manager-extension/src/node/hosted-plugin-manager-contribution-extension-backend-module.ts(12,56): error TS2307: Cannot find module '@theia/plugin-dev' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-about/src/browser/about-che-theia-dialog.tsx(14,44): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-about/src/browser/about-che-theia-dialog.tsx(16,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-activity-tracker/src/node/activity-tracker-service.ts(19,31): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-dashboard/src/browser/theia-dashboard-client.ts(15,31): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-dashboard/src/browser/theia-dashboard-client.ts(82,24): error TS7030: Not all code paths return a value.
+13 error extensions/eclipse-che-theia-git-provisioner/src/browser/status-bar-contribution.ts(20,31): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-git-provisioner/src/browser/status-bar-contribution.ts(52,84): error TS7006: Parameter 'chePreferences' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-git-provisioner/src/browser/status-bar-contribution.ts(66,18): error TS7006: Parameter 'error' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-git-provisioner/src/node/git-configuration-controller.ts(24,53): error TS2307: Cannot find module '@eclipse-che/theia-user-preferences-synchronizer/lib/node/che-theia-preferences-synchronizer' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-git-provisioner/src/node/git-configuration-controller.ts(26,22): error TS7016: Could not find a declaration file for module 'ini'. '/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/node_modules/ini/ini.js' implicitly has an 'any' type.
+13 error   Try `npm install @types/ini` if it exists or add a new declaration (.d.ts) file containing `declare module 'ini';`
+13 error extensions/eclipse-che-theia-git-provisioner/src/node/git-configuration-controller.ts(96,75): error TS7030: Not all code paths return a value.
+13 error extensions/eclipse-che-theia-git-provisioner/src/node/git-configuration-controller.ts(113,83): error TS7006: Parameter 'preferences' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-messaging/src/node/messaging/che-messaging-contribution.ts(16,31): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-api-provider.ts(11,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-ext-api-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-api-provider.ts(12,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-factory-main.ts(13,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(15,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-ext-api-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(45,40): error TS2307: Cannot find module '@theia/mini-browser/lib/browser/mini-browser-open-handler' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(46,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/browser/webview/webview-environment' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(49,48): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/browser/plugin-frontend-view-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(51,29): error TS2307: Cannot find module '@theia/task/lib/browser' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-frontend-module.ts(55,43): error TS2307: Cannot find module '@theia/task/lib/browser/task-terminal-widget-manager' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-github-main.ts(13,38): error TS2307: Cannot find module 'axios' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-mini-browser-open-handler.ts(11,66): error TS2307: Cannot find module '@theia/mini-browser/lib/browser/mini-browser-open-handler' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-product-main.ts(13,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-sidecar-content-reader-main.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-ssh-main.ts(11,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-client.ts(13,45): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(10,78): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(12,35): error TS2307: Cannot find module '@theia/task/lib/browser' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(13,29): error TS2307: Cannot find module '@theia/task/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(37,29): error TS2571: Object is of type 'unknown'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-main.ts(38,29): error TS2571: Object is of type 'unknown'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-resolver.ts(10,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-resolver.ts(11,52): error TS2307: Cannot find module '@theia/task/lib/browser' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-resolver.ts(12,35): error TS2307: Cannot find module '@theia/task/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(11,96): error TS2307: Cannot find module '@theia/task/lib/browser/task-terminal-widget-manager' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(25,23): error TS2339: Property 'kind' does not exist on type 'TerminalWidget'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(58,21): error TS2339: Property 'terminalService' does not exist on type 'CheTaskTerminalWidgetManager'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(64,18): error TS2339: Property 'terminalService' does not exist on type 'CheTaskTerminalWidgetManager'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(72,21): error TS2339: Property 'terminalService' does not exist on type 'CheTaskTerminalWidgetManager'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-task-terminal-widget-manager.ts(72,48): error TS7006: Parameter 'terminal' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-telemetry-main.ts(12,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-telemetry-main.ts(16,24): error TS2307: Cannot find module 'axios' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-telemetry-main.ts(17,35): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-user-main.ts(13,29): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-variables-main.ts(13,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-webview-environment.ts(14,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/browser/webview/webview-environment' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-webview-environment.ts(15,41): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/common/webview-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-webview-environment.ts(37,18): error TS2339: Property 'externalEndpointHost' does not exist on type 'CheWebviewEnvironment'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-webview-environment.ts(39,18): error TS2339: Property 'externalEndpointHost' does not exist on type 'CheWebviewEnvironment'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/che-workspace-main.ts(13,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/container-picker.ts(10,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/oauth-utils.ts(52,35): error TS7030: Not all code paths return a value.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-frontend-service.ts(18,68): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-manager.ts(26,30): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view-contribution.ts(22,73): error TS2344: Type 'ChePluginView' does not satisfy the constraint 'Widget'.
+13 error   Type 'ChePluginView' is missing the following properties from type 'Widget': dispose, disposed, node, isDisposed, and 44 more.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(28,30): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/browser/plugin-ext-widget' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(60,14): error TS2339: Property 'id' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(61,14): error TS2339: Property 'title' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(63,14): error TS2339: Property 'node' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(63,28): error TS7006: Parameter 'event' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(69,14): error TS2339: Property 'node' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(69,32): error TS7006: Parameter 'event' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(76,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(77,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(78,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(79,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(80,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(81,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(82,14): error TS2339: Property 'toDispose' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(102,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(107,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(127,18): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(135,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(190,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(201,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(206,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(353,14): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/plugin/che-plugin-view.tsx(358,18): error TS2339: Property 'update' does not exist on type 'ChePluginView'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(13,29): error TS2307: Cannot find module '@theia/task/lib/browser' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(14,49): error TS2307: Cannot find module '@theia/task/lib/browser/task-terminal-widget-manager' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(15,84): error TS2307: Cannot find module '@theia/task/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(34,37): error TS2339: Property 'taskTerminalWidgetManager' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(37,41): error TS2339: Property 'taskServer' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(37,75): error TS2339: Property 'getContext' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(40,18): error TS2339: Property 'lastTask' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(42,18): error TS2339: Property 'logger' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(52,18): error TS2339: Property 'messageService' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(59,41): error TS2339: Property 'getRunningTasks' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(64,41): error TS2339: Property 'terminalService' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(64,66): error TS7006: Parameter 'terminal' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(66,29): error TS2339: Property 'terminalService' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(71,35): error TS2339: Property 'taskTerminalWidgetManager' does not exist on type 'TaskConfigurationsService'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-config-service.ts(82,13): error TS2322: Type '{ kind: string; title: any; created: string; destroyTermOnClose: true; attributes: { remote: string; closeWidgetExitOrError: string; interruptProcessOnClose: string; CHE_MACHINE_NAME: string; }; }' is not assignable to type 'TerminalWidgetFactoryOptions'.
+13 error   Object literal may only specify known properties, and 'kind' does not exist in type 'TerminalWidgetFactoryOptions'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-status-handler.ts(10,35): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-status-handler.ts(73,92): error TS2339: Property 'kind' does not exist on type 'TerminalWidget'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-status-handler.ts(73,124): error TS2339: Property 'terminalId' does not exist on type 'TerminalWidget'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-status-handler.ts(109,49): error TS2339: Property 'onDidOpenFailure' does not exist on type 'TerminalWidget'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/browser/task-status-handler.ts(113,18): error TS2339: Property 'onDidDispose' does not exist on type 'TerminalWidget'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/common/che-protocol.ts(11,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/common/che-protocol.ts(12,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/common/che-protocol.ts(14,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-api-service.ts(11,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-api-service.ts(12,61): error TS2307: Cannot find module '@eclipse-che/workspace-client' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-api-service.ts(17,55): error TS2307: Cannot find module '@eclipse-che/workspace-telemetry-client' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-backend-module.ts(13,38): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-backend-module.ts(36,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/node/plugin-service' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-plugin-api-provider.ts(11,52): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-ext-api-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-plugin-service.ts(19,58): error TS2307: Cannot find module 'axios' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-plugin-service.ts(21,25): error TS2307: Cannot find module 'tunnel' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-plugin-service.ts(22,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-plugin-service.ts(457,54): error TS7006: Parameter 'component' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(12,68): error TS2307: Cannot find module '@theia/task/lib/node' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(14,45): error TS2307: Cannot find module '@theia/task/lib/common/task-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(15,33): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(43,51): error TS2322: Type '{ label: any; config: any; context: string | undefined; runtimeInfo: any; }' is not assignable to type 'CheTaskOptions'.
+13 error   Object literal may only specify known properties, and 'label' does not exist in type 'CheTaskOptions'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(80,52): error TS2339: Property 'id' does not exist on type 'CheTask'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(119,102): error TS2339: Property 'options' does not exist on type 'CheTask'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/che-task-service.ts(125,26): error TS2339: Property 'taskId' does not exist on type 'CheTask'.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/plugin-service.ts(23,41): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/common/webview-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/node/plugin-service.ts(24,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/main/node/plugin-service' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-api.ts(11,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-api.ts(12,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-api.ts(13,35): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-api.ts(14,24): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-api-rpc' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-api.ts(15,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-devfile.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-factory.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-factory.ts(13,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-github.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-oauth.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-openshift.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-product.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-product.ts(13,40): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-sidecar-content-reader.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-sidecar-content-reader.ts(13,10): error TS2614: Module '"../../../../../node_modules/vscode-uri/lib/umd"' has no exported member 'URI'. Did you mean to use 'import URI from "../../../../../node_modules/vscode-uri/lib/umd"' instead?
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-sidecar-content-reader.ts(25,64): error TS7030: Not all code paths return a value.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-ssh.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-ssh.ts(13,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-task-impl.ts(10,121): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-task-impl.ts(12,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-telemetry.ts(10,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-telemetry.ts(12,78): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-user.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-user.ts(12,29): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-variables.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-variables.ts(13,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-variables.ts(50,49): error TS7030: Not all code paths return a value.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-workspace.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-workspace.ts(13,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/che-workspace.ts(14,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/node/che-api-node-provider.ts(11,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/node/che-api-node-provider.ts(12,52): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-api-rpc' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/node/che-api-node-provider.ts(13,53): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-ext-api-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/node/che-api-node-provider.ts(14,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/node/che-api-node-provider.ts(66,41): error TS7006: Parameter 'plugin' implicitly has an 'any' type.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/webworker/che-api-worker-provider.ts(11,37): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-api-rpc' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/webworker/che-api-worker-provider.ts(12,54): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-ext-api-contribution' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/webworker/che-api-worker-provider.ts(13,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-ext/src/plugin/webworker/che-api-worker-provider.ts(15,22): error TS2307: Cannot find module '@eclipse-che/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/browser/browser-remote-hosted-plugin-support.ts(11,70): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/browser/hosted-plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/browser/browser-remote-hosted-plugin-support.ts(14,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/browser/browser-remote-hosted-plugin-support.ts(17,50): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/browser/plugin-remote-frontend-module.ts(13,37): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/browser/hosted-plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/common/plugin-remote-rpc.ts(11,39): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/common/plugin-remote-rpc.ts(12,62): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/che-content-aware-utils.ts(11,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/che-content-aware-utils.ts(12,10): error TS2614: Module '"../../../../../node_modules/vscode-uri/lib/umd"' has no exported member 'URI'. Did you mean to use 'import URI from "../../../../../node_modules/vscode-uri/lib/umd"' instead?
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/document-container-aware.ts(11,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/document-container-aware.ts(12,34): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/documents' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/document-container-aware.ts(13,10): error TS2614: Module '"../../../../../node_modules/vscode-uri/lib/umd"' has no exported member 'URI'. Did you mean to use 'import URI from "../../../../../node_modules/vscode-uri/lib/umd"' instead?
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/execute-command-container-aware.ts(10,37): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/command-registry' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/hosted-plugin-process-log.ts(11,37): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/hosted-plugin-process' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/hosted-plugin-process-log.ts(13,25): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/types' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/hosted-plugin-process-log.ts(14,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/hosted-plugin-remote.ts(13,52): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/hosted-plugin-remote.ts(16,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/languages-container-aware.ts(11,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/languages-container-aware.ts(12,34): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/languages' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-host-custom.ts(22,33): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-host-custom.ts(23,31): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/plugin-host-rpc' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-reader-extension.ts(13,30): error TS7016: Could not find a declaration file for module 'escape-html'. '/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/node_modules/escape-html/index.js' implicitly has an 'any' type.
+13 error   Try `npm install @types/escape-html` if it exists or add a new declaration (.d.ts) file containing `declare module 'escape-html';`
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-reader-extension.ts(15,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/plugin-reader' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-backend-module.ts(15,55): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-backend-module.ts(20,71): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/hosted-plugin-process' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-browser-impl.ts(12,29): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-browser-impl.ts(13,46): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(13,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(21,91): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(22,88): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(23,39): error TS2307: Cannot find module '@theia/plugin-ext-vscode/lib/node/plugin-vscode-backend-module' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(24,33): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/rpc-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(25,65): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(26,31): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/plugin-host-rpc' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(27,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/hosted/node/plugin-reader' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(28,36): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin-ext-backend-module' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(38,38): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/plugin-manager' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(489,43): error TS2731: Implicit conversion of a 'symbol' to a 'string' will fail at runtime. Consider wrapping this expression in 'String(...)'.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-init.ts(491,47): error TS2731: Implicit conversion of a 'symbol' to a 'string' will fail at runtime. Consider wrapping this expression in 'String(...)'.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-node-impl.ts(11,26): error TS2307: Cannot find module 'deasync' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-node-impl.ts(13,70): error TS2307: Cannot find module '@theia/plugin-ext/lib/common' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/plugin-remote-node-impl.ts(14,38): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/plugin-manager' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/remote-metadata-processor.ts(13,64): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/server-plugin-proxy-runner.ts(12,56): error TS2307: Cannot find module '@theia/plugin-ext/lib/common/plugin-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/server-plugin-proxy-runner.ts(14,32): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/terminal-container-aware.ts(11,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/terminal-container-aware.ts(12,40): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/terminal-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/terminal-container-aware.ts(13,30): error TS2307: Cannot find module '@theia/plugin-ext/lib/plugin/node/debug/debug' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin-remote/src/node/terminal-container-aware.ts(14,36): error TS2307: Cannot find module '@theia/plugin-ext' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin/src/che-proposed.d.ts(16,31): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-plugin/src/che-proposed.d.ts(17,24): error TS2307: Cannot find module '@theia/plugin' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-preferences-provider-extension/src/browser/prefs-provider.ts(25,31): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-preferences-provider-extension/src/browser/prefs-provider.ts(26,21): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-terminal/src/browser/contribution/terminal-command-filter.ts(24,22): error TS2339: Property 'attributes' does not exist on type 'WorkspaceContainer'.
+13 error extensions/eclipse-che-theia-terminal/src/browser/contribution/terminal-command-filter.ts(25,24): error TS2339: Property 'attributes' does not exist on type 'WorkspaceContainer'.
+13 error extensions/eclipse-che-theia-terminal/src/browser/contribution/terminal-command-filter.ts(25,76): error TS2339: Property 'attributes' does not exist on type 'WorkspaceContainer'.
+13 error extensions/eclipse-che-theia-terminal/src/browser/terminal-widget/remote-terminal-widget.ts(13,31): error TS2305: Module '"../../../../../../node_modules/@theia/terminal/lib/common/base-terminal-protocol"' has no exported member 'TerminalProcessInfo'.
+13 error extensions/eclipse-che-theia-terminal/src/browser/terminal-widget/remote-terminal-widget.ts(142,14): error TS2551: Property '_terminalId' does not exist on type 'RemoteTerminalWidget'. Did you mean 'terminalId'?
+13 error extensions/eclipse-che-theia-terminal/src/browser/terminal-widget/remote-terminal-widget.ts(266,60): error TS2339: Property 'kind' does not exist on type 'RemoteTerminalWidget'.
+13 error extensions/eclipse-che-theia-terminal/src/common/workspace-service.ts(11,21): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-terminal/src/node/workspace-service-impl.ts(12,61): error TS2307: Cannot find module '@eclipse-che/workspace-client' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-terminal/src/node/workspace-service-impl.ts(13,21): error TS2307: Cannot find module '@eclipse-che/api' or its corresponding type declarations.
+13 error extensions/eclipse-che-theia-terminal/src/node/workspace-service-impl.ts(63,39): error TS2339: Property 'servers' does not exist on type 'WorkspaceContainer'.
+13 error extensions/eclipse-che-theia-terminal/src/node/workspace-service-impl.ts(85,39): error TS2339: Property 'servers' does not exist on type 'WorkspaceContainer'.
+13 error extensions/eclipse-che-theia-user-preferences/src/node/che-theia-preferences-synchronizer.ts(25,44): error TS2307: Cannot find module '@eclipse-che/theia-plugin-ext/lib/common/che-protocol' or its corresponding type declarations.
+13 error info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+13 error
+13 error     at Promise.all.then.arr (/home/simon/Documents/Workspaces/EclipseSource/ecore-glsp/client/node_modules/lerna/node_modules/execa/index.js:236:11)

@@ -1,0 +1,1 @@
+{"version":3,"file":"feedback.d.ts","sourceRoot":"","sources":["../src/feedback.tsx"],"names":[],"mappings":"AAYA,OAAO,EAAE,KAAK,EAAE,MAAM,gBAAgB,CAAC;AACvC,OAAO,EAAE,mBAAmB,EAAE,aAAa,EAAE,MAAM,SAAS,CAAC;AAM7D;;GAEG;AACH,qBACa,sBAAuB,YAAW,mBAAmB;IAChE,QAAQ,CAAC,KAAK,EAAE,KAAK,EAAE,OAAO,EAAE,aAAa,GAAG,KAAK;IAsBrD,UAAU,IAAI,IAAI;CACnB"}
